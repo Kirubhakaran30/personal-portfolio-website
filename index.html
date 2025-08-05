@@ -19,6 +19,10 @@ color: white;
 padding: 15px 20px;
 position: relative;
 }
+  /* Add this to your existing style tag */
+  html {
+    scroll-behavior: smooth;
+  }
 
 .nav-container {
 display: flex;
@@ -437,22 +441,25 @@ color: #00bcd4;
       <input type="checkbox" id="menu-checkbox" />    
       <label for="menu-checkbox" class="menu-toggle">☰</label>    
       <ul class="nav-links">    
-        <li><a href="#">Home</a></li> 
-        <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>  
-        <li><a href="#">Education</a></li>    
-        <li><a href="#">Contact</a></li>    
+  <li><a href="#home">Home</a></li> 
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>  
+  <li><a href="#education">Education</a></li>    
+  <li><a href="#contact">Contact</a></li>    
+</ul>
       </ul>    
     </div>    
-  </nav>    <!-- Hero Section -->  <section class="hero">    
+  </nav>    <!-- Hero Section -->  <section class="hero" id="home">
   <div class="hero-text">    
     <h1>Hello, I'm kirubha</h1>    
     <p>A Developer passionate about building responsive websites and learning new technologies.</p>  <!-- Buttons -->    
 <div style="display: flex; flex-wrap: wrap; gap: 15px;">    
   <a href="#contact" class="btn">Let's Connect</a>    
-  <a href="resume.docx" class="btn" download>Download Resume</a>
+  <a href="resume.docx" class="btn" download>Download Resume</a>    
 </div>    </div>    <img src="Images.jpeg" alt="Profile Image" class="hero-img">    
-</section>  <!-- About Me Section -->  <section class="about">    
+</section>  <!-- About Me Section -->  
+
+<section class="about" id="about">
   <div class="about-container">    
     <img src="Images.jpeg" alt="My Photo" class="about-img" />  <div class="about-text">    
   <h2>About Me</h2>    
@@ -460,7 +467,9 @@ color: #00bcd4;
   A passionate and creative individual with a strong foundation in web technologies and programming languages including HTML, CSS, Python, C, and C++. Skilled in visual design and photography, with an eye for detail and a flair for creating visually appealing content. Eager to apply both technical and creative skills to build engaging digital experiences.
   </p>    
 </div>    </div>    
-</section>  <!-- Skills Section -->  <section class="skills">    
+</section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
   <h2>My Skills</h2>    
   <div class="skills-container">    
     <div class="skill-card">    
@@ -480,7 +489,10 @@ color: #00bcd4;
       <p>GitHub</p>    
     </div>    
   </div>    
-</section>  <!-- Education Section -->  <section class="education">    
+</section>  
+
+<!-- Education Section -->
+<section class="education" id="education">
   <h2>My Education</h2>    
   <div class="edu-container">    
     <div class="edu-card">    
@@ -494,7 +506,10 @@ color: #00bcd4;
   <p><strong>Year:</strong> 2023 – 2024</p>    
   <p><strong>Marks:</strong>82%</p>    
 </div>    </div>    
-</section>  <!-- Certificates Section -->  <section class="certificates">    
+</section>  
+
+<!-- Certificates Section -->
+<section class="certificates" id="certificates">
   <h2>My Certificates</h2>    
   <div class="cert-container">  <div class="cert-card">    
   <h3>IoT</h3>    
@@ -509,7 +524,10 @@ color: #00bcd4;
   <p>Issued by: YouTube</p>    
   <p>Year: 2023</p>    
 </div>    </div>    
-</section>  <!-- Contact Section --><section class="contact">    
+</section>  
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
   <h2>Contact Me</h2>    
   <div class="contact-container">    
     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">    
@@ -529,13 +547,13 @@ color: #00bcd4;
   <div class="footer-content">    
     <p>&copy; 2025 kirubhakaran. All Rights Reserved.</p>    
     <ul class="footer-links"> 
-    
-      <li><a href="#">Home</a></li>    
-      <li><a href="#about">About</a></li>    
-      <li><a href="#skills">Skills</a></li>    
-      <li><a href="#">Education</a></li>
-      <li><a href="#contact">Contact</a></li>    
-    </ul>    
+  <li><a href="#home">Home</a></li>    
+  <li><a href="#about">About</a></li>    
+  <li><a href="#skills">Skills</a></li>    
+  <li><a href="#education">Education</a></li>
+  <li><a href="#contact">Contact</a></li>    
+</ul>
+
   </div>    
 </footer>  </body>    
 </html>
